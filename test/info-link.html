@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title>Plugin Info</title> 
+		<meta name="description" content="iFrame message passing test">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	</head> 
+<body style="background:#fefefe;"> 
+
+	<h2 style="color:#5cf;">Anleitung zum Einrichten des iFramePlayer (Multiplayer)</h2> 
+		
+		<p>
+		<b>1.)</b> Lade dir das iFramePlayer Paket herunter und über FTPs auf deinen Wordpress Blog, in den Plugin Bereich. <br>
+		Pfad:
+		<code style="color:#f00;">
+			wordpress/wp-content/plugins/iFramePlayer
+		</code>
+		</p>
+		
+		
+		<p>
+		<b>2.)</b> Aktiviere das Plugin im Dashboard.<br>
+		<img src="help3.png" width="70%;">
+		</p>
+		
+
+		<p>
+		<b>3.)</b> Kopiere Dir die Datei <b>template-iframeplayer.php</b> aus dem Paket und lade es in dein Themeordner.<br>
+		Pfad:
+		<code style="color:#f00;">
+			wordpress/wp-content/plugins/iFramePlayer/<b>template-iframeplayer.php</b>
+		</code> 
+		<br>Pfad: 
+		<code style="color:#0a0;">
+			wordpress/wp-content/themes/&lt;MeinThemename>/<b>template-iframeplayer.php</b>
+		</code><br>
+		<img src="help2.png" width="70%;">
+		</p>
+		
+		
+		<p id="ip">
+		<b>4a.)</b> Erstelle eine neue "statische" Seite in deinem Blog. Gebe ihm einen Namen <i>Bsp.:</i> <b>iframeplayer</b>. <br>
+		Achte darauf, das dort <u>keine</u> Leerzeichen im Namen enthalten sind. <br>
+		<i>Diese Seite erstellt für Dich später deinen Player den Du auf deinen Seiten einbinden kannst :)</i>
+		</p>
+		<p>
+		<img src="help1.png" width="70%;">
+		</p>
+		<p> 
+		 <b>4b.)</b>  Ändere unter Attribute das Template auf: iframe Player
+		</p>
+		<br>
+		<br>
+	
+	<h2 id="einbinden" style="color:#5cf;">Manuelles einbinden des Players ohne Podlove Publisher Plugin</h2> 
+		<p>
+		<b>Einbinden des Players:</b> <br>
+		Um deinen iFramePlayer ausgeben zu lassen, kannst Du folgenden Shortcode auf eine Seite anwenden:<br>
+		<code style="color:#f00;">
+			[iFramePlayer width="99" page="iframeplayer"]
+		</code>
+		<br>
+		<img src="help4.png" width="40%;">
+		</p>
+		
+		<p>
+		<b>Codes:</b> 
+		<br>
+		<code style="color:#00f;">
+			width="100" <span style="color: #000;">//definiert die Breite des iFrames auf deiner Seite.</span>
+		</code>
+		</p>
+		<p>
+		<code style="color:#00f;">
+		 page="iframeplayer" <span style="color: #000;">//definiert von wo der iFRamerPlayer abgefragt werden soll.</span>
+		</code>
+		</p>
+		<p>
+		<b>Eintragen einer neuen Episode:</b> <br>
+		Um eine neue Episode einzutragen gehe auf deine eingerichtete iFramePlayer Seite <a href="#ip">(Siehe 4.a <i>iframeplayer</i>)</a>:
+		und klicke auf "Jetzt bearbeiten".
+		<br><br>
+		<img src="help5.png" width="70%;">
+		<br>
+		<br>
+		Trage eine neue Episode wie folgt ein:<br>
+		<code style="color:#f00;">
+			[Episode <span style="color:#00f;">title="Meine tolle Episode"</span>]<span style="color:#0a0;">http://ohneq.podspot.de/files/dwdns30-Skatcast.mp3</span>[/Episode]
+		</code>
+		<br><br>
+		<img src="help6.png" width="70%;">
+		<br><br>
+		Dein Player sieht nach dem Einbinden über einen <a href="#einbinden">Shortcode</a> dann so aus:<br>
+		<img src="help4.png" width="40%;">
+		</p>
+		
+	
+		
+		<br>
+		<br>	
+	
+	<h2 style="color:#5cf;">Einbinden des Players mit installiertem Podove Pubisher Plugins</h2> 
+		<p>
+		<b>Einbinden des Players:</b> <br>
+		Um deinen iFramePlayer ausgeben zu lassen, kannst Du folgenden Shortcode auf eine statische Seite anwenden:<br>
+		<code style="color:#f00;">
+			[iFramePlayer width="100" page="iframeplayer" podlove="1"]
+		</code>
+		</p>
+		
+		<p>
+		<b>Codes:</b> 
+		<br>
+		<code style="color:#00f;">
+			width="100" <span style="color: #000;">//definiert die Breite des iFrames auf deiner Seite.</span>
+		</code>
+		</p>
+		
+		<p>
+		<code style="color:#00f;">
+		 page="iframeplayer" <span style="color: #000;">//definiert von wo der iFRamerPlayer abgefragt werden soll.</span>
+		</code>
+		</p>
+		<p>
+		<code style="color:#00f;">
+		 podlove="1" <span style="color: #000;">//um automatisch alle Episoden auszulesen muss zwingend der Eintrag gesetzt werden.</span>
+		</code>
+		</p>
+		<br>
+		<br>
+	
+	<h2 style="color:#5cf;">Testen des iFrames auf korrekte Funktionalität</h2> 
+		<p>
+		<b>Um die automatische Höhenerkennung des iFrames zu testen kann folgender Code verwendet werden:</b> <br>
+		<code style="color:#f00;">
+			[iFramePlayer test="on"]
+		</code>
+		</p>
+	<br>
+	<br>
+	<br>
+		
+		<script type="text/javascript" src="../js/iframeResizer.contentWindow.min.js"></script> 
+	</body>
+</html>
