@@ -4,7 +4,7 @@ Plugin Name: iFrame MultiPlayer
 Plugin URI: http://wikibyte.org/
 Description: Entwickelt für ohneQ - iFrame Multiplayer API + Post_Type: Podlove
 Author: Michael McCouman Jr.
-Version: 1.0
+Version: 1.0.2
 Author URI: http://twitter.com/mccouman
 */
 
@@ -66,7 +66,7 @@ if(esc_attr($width)) {
 
 if($test == 'on'){
 	//help: test
-	$linktest = "".site_url()."/wp-content/plugins/iFramePlayer/test/content.html";
+	$linktest = "".site_url()."/wp-content/plugins/iFrameMultiplayer/test/content.html";
 } else {
 	if(esc_attr($podlove) == '1'){
 		$_out = '?method=pl&iframeplayer=1';
@@ -80,7 +80,7 @@ if($test == 'on'){
 		
 	} else {
 		//help: install
-		$linktest = site_url()."/wp-content/plugins/iFramePlayer/test/info-link.html";	
+		$linktest = site_url()."/wp-content/plugins/iFrameMultiplayer/test/info-link.html";	
 	}
 }
 
@@ -110,7 +110,7 @@ return "<!--iframe player start-->
 	</script>
 	
 	".$iframe_out."
-	<script type='text/javascript' src='".site_url()."/wp-content/plugins/iFramePlayer/js/jquery.iframeResizer.min.js'></script>
+	<script type='text/javascript' src='".site_url()."/wp-content/plugins/iFrameMultiplayer/js/jquery.iframeResizer.min.js'></script>
 	".$test_out."
 	<!--//iframe player end-->";
 }

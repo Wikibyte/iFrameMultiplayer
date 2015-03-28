@@ -69,9 +69,9 @@ if (isset($_GET["iframeplayer"]) && !empty($_GET["iframeplayer"])) {
 <script type="text/javascript" src="<?php echo site_url(); ?>/wp-includes/js/mediaelement/wp-mediaelement.js"></script>
 <link rel="stylesheet" id="mediaelement-css" href="<?php echo site_url(); ?>/wp-includes/js/mediaelement/mediaelementplayer.min.css" type="text/css" media="all">
 <link rel="stylesheet" id="wp-mediaelement-css" href="<?php echo site_url(); ?>/wp-includes/js/mediaelement/wp-mediaelement.css" type="text/css" media="all">
-<script type="text/javascript" src="<?php echo site_url(); ?>/wp-content/plugins/iFramePlayer/playlist.js"></script>
-<link type="text/css" rel="stylesheet" href="<?php echo site_url(); ?>/wp-content/plugins/iFramePlayer/playlist.css" />
-<script type="text/javascript" src="<?php echo site_url(); ?>/wp-content/plugins/iFramePlayer/js/iframeResizer.contentWindow.min.js"></script> 
+<script type="text/javascript" src="<?php echo site_url(); ?>/wp-content/plugins/iFrameMultiplayer/playlist.js"></script>
+<link type="text/css" rel="stylesheet" href="<?php echo site_url(); ?>/wp-content/plugins/iFrameMultiplayer/playlist.css" />
+<script type="text/javascript" src="<?php echo site_url(); ?>/wp-content/plugins/iFrameMultiplayer/js/iframeResizer.contentWindow.min.js"></script> 
 </body>
 </html>	
 <?php
@@ -83,7 +83,7 @@ if (isset($_GET["iframeplayer"]) && !empty($_GET["iframeplayer"])) {
 			header ( "location: " . site_url() ); 
 		} else {
      		echo '<div style="padding: 20px; background: #fefefe; border:1px solid #eee;">
-				<h2>iFramePlayer manuell bearbeiten?</h2>';
+				<h2>iFrameMultiplayer manuell bearbeiten?</h2>';
      			edit_post_link('Jetzt bearbeiten', '<p>', '</p>');
      		echo '<p><i>(i) Diese Seiten können nur angemeldete Nutzer sehen! Beim Aufruf dieser Seite werden Leser auf die Startseite weitergeleitet.</i></p>';
      		echo '</div>';
