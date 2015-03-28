@@ -17,7 +17,7 @@ __Pfad:__ &lt;pafd-zum-wordpress>/wp-content/themes/&lt;Themename>/template-ifra
 
 2. Gehe in dein Admin Dashbord unter Plugins und aktiviere das Plugin "iFrame MultiPlayer".
 3. Erstelle eine neue Seite mit Namen "Mein Archiv".
-4. Gebe folgenden Shortcode ein [iFramePlayer] und speichere die Seite ab.
+4. Gebe folgenden Shortcode ein [iFrameMultiplayer] und speichere die Seite ab.
 
 Auf Der Seite findest Du nun eine Komplettanleitung, die dir das Einrichten erleichtern soll.
 
