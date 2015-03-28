@@ -8,7 +8,7 @@ Das Plugin wurde für den Podcast <a href="http://ohneq.de/">Der Will doch nur s
 
 2. Entpacken und über FTPs in das Plugin Verzeichnis von Wordpress hochladen
 
-__Pfad:__ &lt;pfad-zum-wordpress>/wp-content/plugins/
+__Pfad:__ &lt;pfad-zum-wordpress>/wp-content/plugins/iFrameMultiplayer
 
 ##Einrichten:
 1. kopiere/verschiebe die template Datei *<a href="https://github.com/Wikibyte/iFramePlayer-Podcaster-Multiplayer/blob/master/template-iframeplayer.php">template-iframeplayer.php</a>* aus dem Paket in dein Theme.
