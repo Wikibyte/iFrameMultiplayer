@@ -114,7 +114,7 @@ return "<!--iframe player start-->
 	".$test_out."
 	<!--//iframe player end-->";
 }
-add_shortcode( 'iFramePlayer', 'iframe_func' );
+add_shortcode( 'iFrameMultiplayer', 'iframe_func' );
 
 
 
