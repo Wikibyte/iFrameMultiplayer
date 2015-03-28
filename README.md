@@ -10,4 +10,6 @@ Multiplayer ME.JS mit Unterstützung für den Podlove Pubisher
 __Pfad:__ &lt;pafd-zum-wordpress>/wp-content/plugins/
 
 ##Einrichten:
-1. 
+1. kopiere/verschiebe die template Datei *<a href="https://github.com/Wikibyte/iFramePlayer-Podcaster-Multiplayer/blob/master/template-iframeplayer.php">template-iframeplayer.php</a>* in dein Theme.
+
+__Pfad:__ &lt;pafd-zum-wordpress>/wp-content/themes/&lt;Themename>/template-iframeplayer.php
