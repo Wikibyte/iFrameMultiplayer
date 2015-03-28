@@ -1,12 +1,3 @@
-/**
- * @file MediaElement Playlist Feature (plugin).
- * @author Andrew Berezovsky <andrew.berezovsky@gmail.com>
- * Twitter handle: duozersk
- * @author Original author: Junaid Qadir Baloch <shekhanzai.baloch@gmail.com>
- * Twitter handle: jeykeu
- * Dual licensed under the MIT or GPL Version 2 licenses.
- */
-
 (function($) {
   $.extend(mejs.MepDefaults, {
     loopText: 'Repeat On/Off',
