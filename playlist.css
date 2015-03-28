@@ -1,10 +1,7 @@
-/*.mejs-controls div.mejs-horizontal-volume-slider {
-	display:none !important;
-}
-
-mejs-container svg mejs-audio
-*/
-
+/*
+* iFrameMultiplayer PlugIn
+*
+**/
 .mejs-container { padding:0px; }
 
 /* Start: Show/Hide Playlist*/
@@ -70,4 +67,3 @@ mejs-container svg mejs-audio
   color: white;
   font-weight: bold;
 }
-/*End: Playlist*/
