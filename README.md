@@ -19,3 +19,5 @@ __Pfad:__ &lt;pafd-zum-wordpress>/wp-content/themes/&lt;Themename>/template-ifra
 4. Gebe folgenden Shortcode ein [iFramePlayer] und speichere die Seite ab.
 
 Auf Der Seite findest Du nun eine Komplettanleitung, die dir das Einrichten erleichtern soll.
+
+<img src="https://raw.githubusercontent.com/Wikibyte/iFramePlayer-Podcaster-Multiplayer/master/test/help4.png">
