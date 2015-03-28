@@ -1,6 +1,6 @@
 # iFrameMultiplayer
 Multiplayer MediaElements.JS mit Unterstützung des Post_Types podcast des Podlove Pubisher Plugins. 
-Das Plugin wurde für den Podcast <a href="http://ohneq.de/">Der Will doch nur spielen!</a> konzipiert.
+Das Plugin wurde für den Podcast <a href="http://ohneq.de/">Der will doch nur spielen!</a> konzipiert.
 
 ##Installation:
 1. Einfach <a href="https://github.com/Wikibyte/iFramePlayer-Podcaster-Multiplayer/archive/master.zip">hier</a> herunterladen
