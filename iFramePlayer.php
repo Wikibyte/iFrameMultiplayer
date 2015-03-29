@@ -121,7 +121,7 @@ add_shortcode( 'iFrameMultiplayer', 'iframe_func' );
 
 
 // [Episode title="Meine tolle Episode"]http://localhost:8888/dwdns-31-talk-mit-ted.mp3[/Episode]
-function playlisting_func( $atts, $content = null ) {
+function episode_func( $atts, $content = null ) {
 
  //Vars
   extract( 
@@ -134,4 +134,18 @@ function playlisting_func( $atts, $content = null ) {
   return "<Source src='".$content."' title='".$title."'></Source>";
 
 }
-add_shortcode( 'Episode', 'playlisting_func' );
+add_shortcode( 'Episode', 'episode_func' );
+
+
+
+// [Playlist] ... [/Playlist]
+function playlisting_func( $atts, $content = null ) {
+
+    return '<div id="mediawrapper" style="height:280px; width: 100%;">
+				<audio type="audio/mp3" controls="controls" style="width: 100%;">'
+				.do_shortcode($content).
+				'</audio>
+		 </div>';
+}
+add_shortcode( 'Playlist', 'playlisting_func' );
+

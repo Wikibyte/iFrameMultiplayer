@@ -37,17 +37,19 @@ if (isset($_GET["iframeplayer"]) && !empty($_GET["iframeplayer"])) {
 				  
 		} elseif($podlove_get == 'ml') {
 		
-			echo '<div id="mediawrapper" style="height:280px; width: 100%;">
-				<audio type="audio/mp3" controls="controls" style="width: 100%;">';
+			#echo '<div id="mediawrapper" style="height:280px; width: 100%;">
+			#	<audio type="audio/mp3" controls="controls" style="width: 100%;">';
 			
 				while ( have_posts() ) : the_post();
-	
+
+				remove_filter ('the_content', 'wpautop');
 				the_content();
 				
 				endwhile;
 			
-			echo '</audio>
-				  </div>';
+			#echo '</audio>
+			#	  </div>';
+			
 		} else {
 			
 			#Keine Angaben der Methode
