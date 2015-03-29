@@ -59,10 +59,10 @@
 		<b>Einbinden des Players:</b> <br>
 		Um deinen iFrameMultiplayer ausgeben zu lassen, kannst Du folgenden Shortcode auf eine Seite anwenden:<br>
 		<code style="color:#f00;">
-			[iFrameMultiplayer width="99" page="iframeplayer"]
+			[iFrameMultiplayer width="100" padding="0" page="iframeplayer"]
 		</code>
 		<br>
-		<img src="help4.png" width="40%;">
+		<img src="help1a.png" width="70%;">
 		</p>
 		
 		<p>
@@ -78,6 +78,12 @@
 		</code>
 		</p>
 		<p>
+		<code style="color:#00f;">
+			padding="10" <span style="color: #000;">//um Außenrand des iFrames mehr Platz zu schaffen.</span>
+		</code>
+		
+		</p>
+		<p>
 		<b>Eintragen einer neuen Episode:</b> <br>
 		Um eine neue Episode einzutragen gehe auf deine eingerichtete iFramePlayer Seite <a href="#ip">(Siehe 4.a <i>iframeplayer</i>)</a>:
 		und klicke auf "Jetzt bearbeiten".
@@ -85,14 +91,33 @@
 		<img src="help5.png" width="70%;">
 		<br>
 		<br>
-		Trage eine neue Episode wie folgt ein:<br>
+		Trage eine neue Episoden wie folgt ein:<br>
 		<code style="color:#f00;">
-		[Playlist]
-		<span style="color:#f00;">[Episode <span style="color:#00f;">title="Meine tolle Episode"</span>]<span style="color:#0a0;">http://ohneq.podspot.de/files/dwdns30-Skatcast.mp3</span>[/Episode]</span>
+		[Playlist]<br>
+		<span style="color:#f00;">[Episode <span style="color:#00f;">title="Meine tolle Episode"</span>]<span style="color:#0a0;">http://ohneq.podspot.de/files/dwdns30-Skatcast.mp3</span>[/Episode]</span><br>
+		<span style="color:#f00;">[Episode <span style="color:#00f;">title="Meine tolle Episode"</span>]<span style="color:#0a0;">http://ohneq.podspot.de/files/dwdns30-Skatcast.mp3</span>[/Episode]</span><br>
+		<span style="color:#000;">...</span><br>
+		<span style="color:#f00;">[Episode <span style="color:#00f;">title="Meine tolle Episode"</span>]<span style="color:#0a0;">http://ohneq.podspot.de/files/dwdns30-Skatcast.mp3</span>[/Episode]</span><br>
+		<span style="color:#f00;">[Episode <span style="color:#00f;">title="Meine tolle Episode"</span>]<span style="color:#0a0;">http://ohneq.podspot.de/files/dwdns30-Skatcast.mp3</span>[/Episode]</span><br>
 		[/Playlist]        
 		</code>
 		<br><br>
 		<img src="help6.png" width="70%;">
+		
+		<br><br>
+		<p>Möchtest Du kein Scrolling bei vielen Audiodateien haben, musst Du die Höhe in der <i>iframeplayer</i> Seite anpassen.</p>
+		<code style="color:#f00;">
+		[Playlist <span style="color:#00f;">height="1289"</span>]<br>
+		<span style="color:#aaa;">[Episode title="Meine tolle Episode"]http://ohneq.podspot.de/files/dwdns30-Skatcast.mp3[/Episode]<br>
+		...</span><br>
+		[/Playlist]        
+		</code>
+		<br><br>
+		<img src="help6b.png" width="70%;">
+		
+		
+		
+		
 		<br><br>
 		Dein Player sieht nach dem Einbinden über einen <a href="#einbinden">Shortcode</a> dann so aus:<br>
 		<img src="help4.png" width="40%;">

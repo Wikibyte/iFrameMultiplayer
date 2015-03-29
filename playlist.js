@@ -171,7 +171,7 @@
         }
       });
       for (var track in tracks) {
-        layers.find('.mejs-playlist > ul').append('<li data-url="' + tracks[track].source + '" title="' + tracks[track].name + '">' + tracks[track].name + '</li>');
+        layers.find('.mejs-playlist > ul').append('<li data-url="' + tracks[track].source + '" title="' + tracks[track].name + '"><img style="width:20px;" src="logo.jpg"> <div id="lemmer">' + tracks[track].name + '</div></li>');
       }
 
       // set the first track as current

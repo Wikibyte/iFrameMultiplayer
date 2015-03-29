@@ -43,7 +43,8 @@
 .mejs-playlist {
   position: absolute;
   left: 0;
-  height: 200px !important;
+  /*height: 200px !important;*/ /*fixed*/
+  /*height: auto !important;*/ /*fixed*/
   overflow-y: auto;
   background: #000000;
   opacity: 0.8;
@@ -54,16 +55,26 @@
 }
 .mejs-playlist li {
   color: white;
-  font-size: 11px;
-  height: 16px;
+  font-size: 12px;
+  height: auto; /*fixed*/
   overflow: hidden;
   margin: 2px;
   cursor: pointer;
+  border-bottom: 1px solid #121212; /*fixed*/
+  padding: 11px 5px 17px 10px; /*fixed*/
+}
+
+.mejs-playlist li div#lemmer {
+	margin-top: -18px;
+  	margin-left: 31px;
 }
 .mejs-playlist li:hover {
   color: #a8a8a8;
 }
 .mejs-playlist li.current {
-  color: white;
+  margin-top: -2px;
+  font-size: 13px;	 
+  color: #83F0F9;
   font-weight: bold;
+  background: rgba(21, 141, 163, 0.19);
 }

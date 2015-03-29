@@ -18,6 +18,7 @@ function iframe_func( $atts, $content = null ) {
   			'test' => 'off', 
   			'page' => '',
   			'podlove' => '',	
+  			'padding' => '',
   		), 
   	$atts ) 
   );
@@ -67,6 +68,7 @@ if(esc_attr($width)) {
 if($test == 'on'){
 	//help: test
 	$linktest = "".site_url()."/wp-content/plugins/iFrameMultiplayer/test/content.html";
+	
 } else {
 	if(esc_attr($podlove) == '1'){
 		$_out = '?method=pl&iframeplayer=1';
@@ -84,9 +86,12 @@ if($test == 'on'){
 	}
 }
 
+if( esc_attr($padding) ) {
+	$style_padding = 'style="padding:'.$padding.'px"';
+}
 
 	//player out
-	$iframe_out ="<iframe id='test' ".$width_out." src='".$linktest."' scrolling='yes' frameBorder='0'></iframe>";	
+	$iframe_out = "<iframe id='test' ".$width_out." src='".$linktest."' ".$style_padding." scrolling='yes' frameBorder='0'></iframe>";	
 
 
 return "<!--iframe player start-->
@@ -131,21 +136,39 @@ function episode_func( $atts, $content = null ) {
   		), 
   	$atts ) 
   );
-  return "<Source src='".$content."' title='".$title."'></Source>";
+  return "<Source src='".$content."' title='# ".$title."'></Source>";
 
 }
 add_shortcode( 'Episode', 'episode_func' );
 
 
 
-// [Playlist] ... [/Playlist]
+// [Playlist height="280"] ... [/Playlist] nur für Manuelle Bearbeitung
 function playlisting_func( $atts, $content = null ) {
 
-    return '<div id="mediawrapper" style="height:280px; width: 100%;">
+ 	//Vars
+  	extract( 
+  		shortcode_atts( 
+  		array( 
+  			'height' => '280px',
+  		), 
+  	$atts ) 
+  	);
+
+	//Slider height Manipulation
+	if( esc_attr($height) == '280px') {
+		$div_height = 'height: 365';
+	} else {
+		$div_height = 'height: '.esc_attr($height + 85).'';
+	}
+
+    return '<style>.mejs-playlist { height: '.esc_attr($height).' !important; }</style>	
+    		<div id="mediawrapper" style="'.$div_height.'px; width: 100%;">
 				<audio type="audio/mp3" controls="controls" style="width: 100%;">'
 				.do_shortcode($content).
 				'</audio>
-		 </div>';
+		 	</div>
+		 	<br><br><br>';
 }
 add_shortcode( 'Playlist', 'playlisting_func' );
 
